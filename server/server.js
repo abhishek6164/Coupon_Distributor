@@ -10,10 +10,12 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL, // Environment variable for frontend URL
+  origin: "*", // Ya phir specific frontend URL likho: "https://coupon-distributor-1-l1on.onrender.com"
   methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type,Authorization",
   credentials: true,
 }));
+
 
 mongoose
   .connect(process.env.MONGO_URI, {

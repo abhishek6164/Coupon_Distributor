@@ -78,6 +78,10 @@ app.delete("/api/delete", async (req, res) => {
     res.status(500).json({ message: "Error deleting coupon" });
   }
 });
+app.get("/", (req, res) => {
+  res.send("✅ Coupon Distributor Backend is Running!");
+});
+
 
 // **Claim Coupon**
 app.post("/api/claim", claimLimiter, async (req, res) => {

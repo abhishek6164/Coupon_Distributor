@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FaPlus, FaTrash } from "react-icons/fa";
-import { AppContextProvider } from "../context/AppContext"; // Import the provider
+// import { AppContextProvider } from "../context/AppContext"; // Import the provider
 
 const AdminDashboard = () => {
   const [coupons, setCoupons] = useState([]);

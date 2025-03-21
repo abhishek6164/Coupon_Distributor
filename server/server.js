@@ -10,7 +10,7 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Apne frontend ka URL daal
+  origin: 'https://coupon-distributor-1-l1on.onrender.com/', // Apne frontend ka URL daal
   methods: 'GET,POST,PUT,DELETE',
   credentials: true
 }));
